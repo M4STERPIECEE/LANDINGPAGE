@@ -27,8 +27,8 @@ jobs:
       - name: Build de l'application
         run: npm run build
 
-      - name: Déploiement sur GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: dist/votre-nom-de-projet
-          branch: gh-pages
+      # - name: Déploiement sur GitHub Pages
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     folder: dist/landing-page # À corriger plus tard
+      #     branch: gh-pages

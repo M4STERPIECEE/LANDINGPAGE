@@ -1,12 +1,16 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { EventsComponent } from './components/events/events.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { VisionComponent } from './components/vision/vision.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [NavbarComponent, HeroComponent, VisionComponent, EventsComponent, TestimonialsComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('LANDING-PAGE');
-}
+export class App {}
