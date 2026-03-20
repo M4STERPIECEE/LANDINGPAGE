@@ -1,0 +1,33 @@
+name: develop LANDING
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout du code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Installation des dépendances
+        run: npm ci
+
+      - name: Vérification du Lint
+        run: npm run lint
+
+      - name: Exécution des Tests Unitaires
+        run: npm run test
+
+      - name: Build de vérification
+        run: npm run build -- --configuration development
