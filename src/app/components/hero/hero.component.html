@@ -1,13 +1,13 @@
-<section class="relative overflow-hidden px-6 pb-24 pt-32 md:pb-36 md:pt-48">
+<section @pageSectionEnter class="relative overflow-hidden px-6 pb-24 pt-32 md:pb-36 md:pt-48">
   <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-12">
-    <div class="z-10 lg:col-span-7">
-      <h1 class="serif-text mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-on-surface md:text-7xl">
+    <div @staggerChildren class="z-10 lg:col-span-7">
+      <h1 data-stagger-item class="serif-text mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-on-surface md:text-7xl">
         Welcome to Your <span class="italic text-primary">Sanctuary</span>
       </h1>
-      <p class="mb-10 max-w-xl text-lg leading-relaxed text-on-surface-variant font-body md:text-xl">
+      <p data-stagger-item class="mb-10 max-w-xl text-lg leading-relaxed text-on-surface-variant font-body md:text-xl">
         A contemporary community rooted in tradition, growing in love, and finding peace together in the digital age.
       </p>
-      <div class="flex flex-wrap gap-4">
+      <div data-stagger-item class="flex flex-wrap gap-4">
         <button class="btn-primary-gradient rounded-xl px-10 py-4 text-lg font-semibold text-on-primary transition-all active:scale-95">
           Join Us This Sunday
         </button>
@@ -16,7 +16,7 @@
         </button>
       </div>
     </div>
-    <div class="relative lg:col-span-5">
+    <div @softRise class="relative lg:col-span-5">
       <div class="absolute -inset-4 rounded-full bg-primary-container/20 blur-3xl"></div>
       <img
         alt="Community gathering"
