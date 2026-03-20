@@ -1,11 +1,11 @@
-<section class="rounded-t-lg bg-primary py-24 text-on-primary md:py-36">
+<section @pageSectionEnter class="rounded-t-lg bg-primary py-24 text-on-primary md:py-36">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mb-20 text-center">
       <span class="mb-4 block text-sm font-bold uppercase tracking-[0.2em] opacity-80">Stories</span>
       <h2 class="serif-text text-4xl font-bold md:text-5xl">Life at The Sanctuary</h2>
     </div>
-    <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-      <div class="flex h-full flex-col">
+    <div @staggerChildren class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
+      <div data-stagger-item class="flex h-full flex-col">
         <span class="material-symbols-outlined mb-6 text-5xl text-primary-container opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
         <p class="serif-text mb-10 flex-grow text-xl italic leading-relaxed">
           "I haven't felt this connected to a community in years. It's a space where I can ask hard questions and still feel completely at home."
@@ -22,7 +22,7 @@
           </div>
         </div>
       </div>
-      <div class="flex h-full flex-col">
+      <div data-stagger-item class="flex h-full flex-col">
         <span class="material-symbols-outlined mb-6 text-5xl text-primary-container opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
         <p class="serif-text mb-10 flex-grow text-xl italic leading-relaxed">
           "The focus on mental wellness and faith has been transformative for my family. This is what modern church should look like."
@@ -39,7 +39,7 @@
           </div>
         </div>
       </div>
-      <div class="flex h-full flex-col">
+      <div data-stagger-item class="flex h-full flex-col">
         <span class="material-symbols-outlined mb-6 text-5xl text-primary-container opacity-30" style="font-variation-settings: 'FILL' 1;">format_quote</span>
         <p class="serif-text mb-10 flex-grow text-xl italic leading-relaxed">
           "Even as a remote member, the online services feel intimate and intentional. I truly feel part of the community."

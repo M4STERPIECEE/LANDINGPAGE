@@ -1,4 +1,4 @@
-<section class="mx-4 rounded-lg bg-surface-container-low py-24 md:py-36">
+<section @pageSectionEnter class="mx-4 rounded-lg bg-surface-container-low py-24 md:py-36">
   <div class="mx-auto max-w-7xl px-6">
     <div class="mb-20 text-center">
       <h2 class="serif-text mb-6 text-4xl font-bold text-primary md:text-5xl">Our Vision</h2>
@@ -6,8 +6,8 @@
         We believe in a faith that is as alive and dynamic as the world we inhabit.
       </p>
     </div>
-    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-      <div class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
+    <div @staggerChildren class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div data-stagger-item class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
         <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-primary-container">
           <span class="material-symbols-outlined text-3xl text-primary">favorite</span>
         </div>
@@ -16,7 +16,7 @@
           Radical hospitality that welcomes everyone exactly as they are, without judgment or barriers.
         </p>
       </div>
-      <div class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
+      <div data-stagger-item class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
         <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-primary-container">
           <span class="material-symbols-outlined text-3xl text-primary">groups</span>
         </div>
@@ -25,7 +25,7 @@
           Finding strength in shared journeys, whether in person or across digital borders.
         </p>
       </div>
-      <div class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
+      <div data-stagger-item class="group rounded-lg bg-surface-container-lowest p-10 transition-transform duration-300 hover:translate-y-[-8px]">
         <div class="mb-8 flex h-16 w-16 items-center justify-center rounded-full bg-primary-container">
           <span class="material-symbols-outlined text-3xl text-primary">explore</span>
         </div>
