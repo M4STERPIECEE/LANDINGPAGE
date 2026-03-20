@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'npm'
 
       - name: Installation des dépendances
@@ -27,7 +27,7 @@ jobs:
         run: npm run lint
 
       - name: Exécution des Tests Unitaires
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
+        run: npm run test
 
       - name: Build de vérification
         run: npm run build -- --configuration development
